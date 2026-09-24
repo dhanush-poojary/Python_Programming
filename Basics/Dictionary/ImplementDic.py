@@ -10,7 +10,7 @@ print(dic)
 # print()
 
 # val = dic.values()
-# print(val)
+# print(val) 
 # for val in dic.values():
 #   print(val,end=" ")
 # print()
@@ -19,7 +19,9 @@ print(dic)
 
 print(dic.get("bgmi"))#key not present
 print(dic.get("Dhoni"))#present but not as a key but as a value
-print(dic.get("Cricket"))
+print(dic.get("Cricket"))# will return None if key is not present
+
+print(dic["Cricket"])#but this will throw error if key is not present 
 
 dic.update({"F1":"Formula 1"})
 print(dic.get("F1")) 
